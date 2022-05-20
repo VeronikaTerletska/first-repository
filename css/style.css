@@ -1,0 +1,74 @@
+:root {
+  --primary-background-color: #ffffff;
+  --primary-text-color: #555555;
+  --title-text-color: #303030;
+  --accent-color: #ff6c00;
+  --white-title-color: #ffffff;
+  --white-text-color: #ffffff;
+  --black-btn: #ffffff;
+  --white-btn: #303030;
+}
+body {
+  font-family: Raleway, sans-serif;
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Header */
+.header {
+  background-color: #555555;
+}
+.header-link {
+  color: var(--white-text-color);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+.button {
+  font-family: inherit;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+/* Hero */
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+.hero-top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-title-color);
+}
+.hero-bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
