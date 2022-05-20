@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>BarberShop</title>
   </head>
   <body>
-    <header>
-      <a href=""><img src="./images/logo.svg" alt="Логотип" /></a>
+    <header class="header">
+      <a class="header-logo" href=""><img src="./images/logo.svg" alt="Логотип" /></a>
       <nav>
         <ul>
-          <li><a href="#aboutus">Про нас</a></li>
-          <li><a href="#services">Послуги та ціни</a></li>
-          <li><a href="#masters">Майстри</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+          <li><a href="#aboutus" class="header-link">Про нас</a></li>
+          <li><a href="#services" class="header-link">Послуги та ціни</a></li>
+          <li><a href="#masters" class="header-link">Майстри</a></li>
+          <li><a href="#contacts" class="header-link">Контакти</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11 </a>
-      <button type="button">онлайн-запис</button>
+      <a href="tel:+380441111111" class="header-link">+38 044 111 11 11 </a>
+      <button type="button" class="button header-link">онлайн-запис</button>
     </header>
     <main>
       <section>
@@ -29,18 +36,26 @@
               target="_blank"
               rel="noopener nofollow noreferrer"
               aria-label="Instagram link"
+              class="hero-link"
               >Instagram</a
             >
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener nofollow noreferrer" aria-label="Youtube link"
+            <a
+              class="hero-link"
+              href=""
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              aria-label="Youtube link"
               >Youtube</a
             >
           </li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>
-        <p>Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.</p>
+        <p lang="en" class="hero-top-text">A hair salon for men in Kyiv</p>
+        <h1 lang="en" class="hero-title">BarberShop</h1>
+        <p class="hero-bottom-text">
+          Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно та зі смаком.
+        </p>
       </section>
       <section id="aboutus">
         <ul>
