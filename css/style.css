@@ -38,6 +38,7 @@ a {
   font-family: inherit;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  text-transform: uppercase;
 }
 /* HERO */
 .hero-link {
@@ -103,5 +104,12 @@ a {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
-.about-btn {
+.about-btn-link,
+.bout-btn-link:hover .about-btn-link:focus {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  color: var(--white-btn);
+  cursor: pointer;
 }
