@@ -12,11 +12,55 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: var(--primary-text-color);
 }
-ul {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.list {
   list-style: none;
 }
-a {
+.link {
   text-decoration: none;
+}
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+.top-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.bottom-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 /* Header */
 .header {
@@ -34,12 +78,6 @@ a {
 .header-link:focus {
   color: var(--accent-color);
 }
-.button {
-  font-family: inherit;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  text-transform: uppercase;
-}
 /* HERO */
 .hero-link {
   font-weight: 600;
@@ -56,47 +94,19 @@ a {
   background-color: #555555;
 }
 .hero-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
-  font-family: 'Raleway', sans-serif;
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
   color: var(--white-title-color);
 }
 .hero-bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: #9da4bd;
 }
 /* ABOUT US */
-.about-top-text {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
-}
 .about-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--title-text-color);
-}
-.about-bottom-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
 }
 .about-text {
   font-weight: 400;
@@ -104,12 +114,134 @@ a {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
-.about-btn-link,
-.bout-btn-link:hover .about-btn-link:focus {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
+.about-btn {
   color: var(--white-btn);
+}
+.bout-btn:hover .about-btn:focus {
+  color: var(--accent-color);
+}
+/* PRICES */
+.prices {
+  background-color: #555555;
+}
+.prices-top-text {
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  color: var(--white-title-color);
+}
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.prices-btn {
+  color: var(--black-btn);
+}
+/* BENEFITS */
+.benefits-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--title-text-color);
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.benefits-title {
+  color: var(--title-text-color);
+}
+/* MASTERS */
+.masters {
+  background-color: #f7f7f7;
+}
+.masters-top-text {
+  color: var(--title-text-color);
+}
+.masters-title {
+  color: var(--title-text-color);
+}
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* GALLERY */
+.gallery-top-text {
+  color: var(--title-text-color);
+}
+/* ONLINE */
+.online {
+  background-color: #303030;
+}
+.online-title {
+  color: var(--white-title-color);
+}
+/* CONTACTS */
+.contacts {
+  background-color: #303030;
+}
+.contacts-title {
+  color: var(--white-title-color);
+}
+.contacts-address {
+  font-style: normal;
+}
+.contacts-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67x;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-title-color);
+}
+.contacts-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* FOOTER */
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--title-text-color);
   cursor: pointer;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
