@@ -26,9 +26,38 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid red;
 }
 .title {
   font-family: 'Raleway', sans-serif;
@@ -62,7 +91,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
-/* Header */
+/*------------------------ Header-------------------- */
 .header {
   background-color: #555555;
 }
@@ -78,7 +107,7 @@ body {
 .header-link:focus {
   color: var(--accent-color);
 }
-/* HERO */
+/*--------------------------HERO------------------------- */
 .hero-link {
   font-weight: 600;
   font-size: 11px;
