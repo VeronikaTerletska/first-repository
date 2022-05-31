@@ -1,12 +1,12 @@
 :root {
   --primary-background-color: #ffffff;
   --primary-text-color: #555555;
-  --title-text-color: #303030;
+  --second-title-color: #303030;
   --accent-color: #ff6c00;
-  --white-title-color: #ffffff;
+  --main-title-color: #ffffff;
   --white-text-color: #ffffff;
-  --black-btn: #ffffff;
-  --white-btn: #303030;
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -72,7 +72,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: var(--main-title-color);
 }
 .btn {
   font-family: inherit;
@@ -95,7 +95,7 @@ img {
 .header {
   background-color: #555555;
 }
-.header-link {
+.header-link, .header-tel {
   color: var(--white-text-color);
   font-weight: 600;
   font-size: 12px;
@@ -104,8 +104,20 @@ img {
   cursor: pointer;
 }
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
   color: var(--accent-color);
+}
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+
 }
 /*--------------------------HERO------------------------- */
 .hero-link {
@@ -128,12 +140,12 @@ img {
 .hero-title {
   font-size: 72px;
   line-height: 1.18;
-  color: var(--white-title-color);
+  color: var(--main-title-color);
 }
 .hero-bottom-text {
   color: #9da4bd;
 }
-/* ABOUT US */
+/*-----------------------------------ABOUT US------------------------ */
 .about-title {
   color: var(--title-text-color);
 }
@@ -149,7 +161,7 @@ img {
 .bout-btn:hover .about-btn:focus {
   color: var(--accent-color);
 }
-/* PRICES */
+/*-----------------------------------PRICES-------------------------------- */
 .prices {
   background-color: #555555;
 }
